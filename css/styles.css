@@ -703,3 +703,212 @@ body {
 .close-button-svg {
     transition: fill var(--transition-duration-function);
 }
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    font-family: var(--main-font-family);
+    margin-top: 72px;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+    margin-top: 16px;
+}
+
+.modal-input-name {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+    font-family: var(--main-font-family);
+    margin-bottom: 4px;
+}
+
+.modal-input {
+    box-sizing: border-box;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
+    margin-bottom: 8px;
+    transition: var(--transition-duration-function);
+}
+
+.modal-input:focus {
+    outline-color: transparent;
+    border: 1px solid #4D5AE5;
+}
+
+.modal-input:focus+.input-svg {
+    fill: #4D5AE5;
+}
+
+
+.modal-comment:focus {
+    outline-color: transparent;
+    border: 1px solid #4D5AE5;
+}
+
+.modal-comment {
+    box-sizing: border-box;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    width: 360px;
+    height: 120px;
+    margin-bottom: 16px;
+    resize: none;
+    padding: 8px 16px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    transition: var(--transition-duration-function);
+}
+
+.modal-comment::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    font-family: var(--main-font-family);
+}
+
+.icon-section {
+    position: relative;
+}
+
+.input-svg {
+    position: absolute;
+    display: block;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+}
+
+.checkbox-box {
+    box-sizing: border-box;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    fill: #fcfcfc;
+    margin-right: 8px;
+    transition: var(--transition-duration-function);
+}
+
+.checkbox-box:hover,
+.checkbox-box:focus {
+    content: "";
+    box-sizing: border-box;
+    background: #404BBF;
+    border: 1px solid #404BBF;
+    border-radius: 2px;
+    fill: #F4F4FD;;
+}
+
+.checkbox-text {
+    font-family: var(--main-font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+    margin-bottom: 24px;
+}
+
+.policy-link {
+    text-decoration: underline;
+    color: rgba(77, 90, 229, 1);
+    cursor: pointer;
+}
+
+.send-button {
+    width: 169px;
+    height: 56px;
+    background: #4D5AE5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    font-family: var(--main-font-family);
+    color: #FFFFFF;
+}
+
+.form-footer {
+    margin-left: 80px;
+}
+
+.footer-div {
+    display: flex;
+    flex-direction: row;
+    gap: 24px
+}
+
+.footer-input {
+    box-sizing: border-box;
+    border: 1px solid #FFFFFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: #2E2F42;
+    width: 264px;
+    height: 40px;
+    padding: 8px 16px;
+}
+
+.footer-input::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    font-family: var(--main-font-family);
+}
+
+.footer-input-name {
+    font-family: var(--main-font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.subscribe-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 16px;
+    background: #4D5AE5;
+    color: #F4F4FD;
+    border: none;
+    border-radius: 4px;
+    fill:#FFFFFF;
+}
