@@ -706,10 +706,6 @@ body {
     transition: fill var(--transition-duration-function);
 }
 
-label {
-    display: flex;
-    flex-direction: column;
-}
 
 .modal-header {
     display: flex;
@@ -789,6 +785,7 @@ label {
     font-family: var(--main-font-family);
     background-color: transparent;
     outline: transparent;
+    padding: 8px 16px;
 }
 
 .modal-comment::placeholder {
@@ -830,7 +827,7 @@ label {
     border: 0;
 }
 
-.visually-hidden:checked + .checkbox-box {
+.checkbox-box:checked {
     background-color: var(--checkbox-color);
     fill: var(--secondary-text-color-theme-dark);
     border: none;
