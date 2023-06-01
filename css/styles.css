@@ -327,6 +327,8 @@ body {
 
 .name-card {
     padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .values-list {
@@ -451,8 +453,6 @@ body {
 
 .card-link {
     transition: box-shadow var(--transition-duration-function);
-    border: 1px solid #e7e9fc;
-    border-top: none;
 }
 
 .card-link:hover,
@@ -549,10 +549,6 @@ body {
     margin-right: 120px;
 }
 
-.footer-div {
-    display: flex;
-    align-items: baseline
-}
 
 .media-team {
     fill: var(--primary-text-color-theme-dark)
@@ -819,7 +815,7 @@ body {
 .visually-hidden {
     position: absolute;
     overflow: hidden;
-    clip: rect(0, 0, 0, 0);
+    clip: rect(0, 0, 0, 0); 
     width: 1px;
     height: 1px;
     margin: -1px;
@@ -827,7 +823,7 @@ body {
     border: 0;
 }
 
-.checkbox-box:checked {
+.visually-hidden:checked + .checkbox-text > .checkbox-box {
     background-color: var(--checkbox-color);
     fill: var(--secondary-text-color-theme-dark);
     border: none;
@@ -891,7 +887,7 @@ body {
 .footer-div {
     display: flex;
     flex-direction: row;
-    gap: 24px
+    align-items: baseline;
 }
 
 .footer-input {
