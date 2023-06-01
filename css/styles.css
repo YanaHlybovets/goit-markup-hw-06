@@ -865,6 +865,7 @@ label {
 
 .form {
     display: flex;
+    gap: 24px;
 }
 
 .footer-div {
@@ -883,7 +884,7 @@ label {
     height: 40px;
     padding-left: 16px;
     font-size: 12px;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     color: #FFFFFF;
@@ -908,11 +909,20 @@ label {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 8px 24px;
-    gap: 16px;
-    background: #4D5AE5;
-    color: #F4F4FD;
+    min-width: 165px;
+    height: 40px;
+    background-color: #4D5AE5;
+    color: #ffffff;
     border: none;
     border-radius: 4px;
     fill:#FFFFFF;
+    font-family: var(--main-font-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+.subscribe-svg {
+    margin-left: 16px;
 }
